@@ -25,9 +25,9 @@ class Web_graph:
 
         for key in list(self.nodes.keys()):
             centralities[key] = {'indegree' : self.indegree_metric(key), 'closeness' : self.closeness_metric(key), 'harmonic_centrality' : self.harmonic_centrality_metric(key)}
-            print(key + ' indegree is: ' + centralities[key]['indegree'])
-            print(key + ' closeness is: ' + centralities[key]['closeness'])
-            print(key + ' harmonic_centrality is: ' + centralities[key]['harmonic_centrality'])
+            print(key + ' indegree is: ' + str(centralities[key]['indegree']) )
+            print(key + ' closeness is: ' + str(centralities[key]['closeness']) )
+            print(key + ' harmonic_centrality is: ' + str(centralities[key]['harmonic_centrality']) )
 
         with open('centralities.txt', 'w') as file:
             json.dump(obj=centralities, indent=4, sort_keys=True, fp=file)
