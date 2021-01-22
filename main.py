@@ -5,7 +5,7 @@
 # - robots directory is used for temporary store and parsing of robots.txt files associated to hosts fetched by threads
 # - The thread status folder collects files in chronological order that describe the thread work involved
 #   in executing and retrieving urls from the frontier execution queue.
-# - seed.txt contains the starting url from which to start the execution.
+# - seed.txt contains the starting urls from which to start the execution.
 #   The topic chosen for the test is the coronavirus pandemic.
 # - keys.txt contains the keywords related to the topic chosen for the search of the pages,
 #   these must contain at least one keyword within the text to be considered valid.
